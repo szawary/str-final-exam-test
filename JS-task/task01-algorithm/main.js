@@ -43,11 +43,15 @@ const cityList = [{
  * @returns all cities where population is lower than the specified and the area
  * is greater then the specified.
  */
-const cityFilter = (list, population, area) => {};
+const cityFilter = (list, population, area) => {
+    
 // lakosság alacsonyabba megadottnál
 // a területe a városnak pedig nagyobb legyen, mint a meghat.
+    return list.filter(item => item.population < population && item.area > area)
+        .map( item => item.name);
+// leszűkítem csak a város nevekre
 
-
+};
 
 const citySorter = (list, key) => {};
 
