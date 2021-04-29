@@ -53,7 +53,9 @@ const cityFilter = (list, population, area) => {
 
 };
 
-const citySorter = (list, key) => {};
+const citySorter = (list, key) => {
+    return list.sort(item => item.key );
+};
 
 const citySlicer = (list, limit) => {
     return citySorter(list, 'name').slice(0, limit);
