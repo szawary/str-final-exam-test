@@ -44,6 +44,10 @@ const cityList = [{
  * is greater then the specified.
  */
 const cityFilter = (list, population, area) => {};
+// lakosság alacsonyabba megadottnál
+// a területe a városnak pedig nagyobb legyen, mint a meghat.
+
+
 
 const citySorter = (list, key) => {};
 
