@@ -69,3 +69,10 @@ if (typeof module !== 'undefined') {
         citySlicer
     };
 }
+
+
+// ABC szerint rendezni a tömböt
+
+const names = ['Aladár', 'Béla', 'Kati' ];
+names.sort((a,b)=>a.localeCompare(b))
+console.log(names);
