@@ -76,3 +76,9 @@ if (typeof module !== 'undefined') {
 const names = ['Aladár', 'Béla', 'Kati' ];
 names.sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()));
 console.log(names);
+
+// vagy
+
+names.sort( new Intl.Collator('hu').compare);
+console.log(names);
+
