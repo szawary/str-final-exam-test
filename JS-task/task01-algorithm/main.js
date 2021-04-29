@@ -74,5 +74,5 @@ if (typeof module !== 'undefined') {
 // ABC szerint rendezni a tömböt
 
 const names = ['Aladár', 'Béla', 'Kati' ];
-names.sort((a,b)=>a.localeCompare(b))
+names.sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()));
 console.log(names);
